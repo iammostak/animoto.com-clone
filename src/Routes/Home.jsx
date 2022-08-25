@@ -1,7 +1,15 @@
+import Business from "../Components/Business";
+import EverythingNeed from "../Components/EverythingNeed";
+import Introduction from "../Components/Introduction";
+import QuicklyTemplates from "../Components/QuicklyTemplates";
+
 function Home() {
    return (
-      <div style={{ height: '75vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#224386' }}>
-         <h1>home page...</h1>
+      <div>
+         <Introduction />
+         <Business />
+         <QuicklyTemplates />
+         <EverythingNeed />
       </div>
    );
 }
