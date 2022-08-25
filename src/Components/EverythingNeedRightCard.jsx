@@ -1,4 +1,4 @@
-function EverythingNeedRightCard({ title, des, video }) {
+function EverythingNeedRightCard({ title, des, video, buttonText }) {
    return (
       <div>
          <div>
@@ -12,7 +12,7 @@ function EverythingNeedRightCard({ title, des, video }) {
          <div className="need-details">
             <h1>{title}</h1>
             <div>{des}</div>
-            <button className='btn outline'>GET STARTED FREE</button>
+            <button className='btn outline'>{buttonText}</button>
          </div>
       </div>
    );

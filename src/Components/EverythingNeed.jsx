@@ -13,16 +13,19 @@ function EverythingNeed() {
                title='Stock images and music at your fingertips'
                des='Save time and money tracking down stock media with our built-in library of millions of photos, video clips, and graphics from Getty Images. Set the mood with one of 3,000+ licensed songs.'
                video='https://d2of6bhnpl91ni.cloudfront.net/cms/12-2020_StockGraphic_Homepage_A3_ForAnimation (1)-50f8e6b637.mp4'
+               buttonText='GET STARTED FREE'
             />
             <EverythingNeedRightCard
                title='Easy customization tools'
                des='Make each video your own with intuitive color, font, and design tools. Add your logo as a watermark to build brand awareness.'
                video='https://d2of6bhnpl91ni.cloudfront.net/cms/easily%20customize%20your%20videos-5cb98c4715.mp4'
+               buttonText='GET STARTED FREE'
             />
             <EverythingNeedLeftCard
                title='Unlimited video creation'
                des='Create square, landscape, and vertical videos to share to social media and beyond. There are no creation limits on any Animoto plan.'
                video='https://d2of6bhnpl91ni.cloudfront.net/cms/create-unlimited-videos-37b27ee358.mp4'
+               buttonText='GET STARTED FREE'
             />
          </div>
       </div>
