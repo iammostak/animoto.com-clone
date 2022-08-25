@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
 	width: 4px;
 }
@@ -35,11 +39,11 @@ body::-webkit-scrollbar-thumb {
 	position: sticky;
 	top: 0;
 	background-color: #fff;
-	z-index: 1;
+	z-index: 2;
 }
 
 .nav-art {
-	z-index: 2;
+	z-index: 3;
 	position: absolute;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -49,7 +53,7 @@ body::-webkit-scrollbar-thumb {
 .brand-logo {
 	margin-right: 5%;
 	height: 50px;
-	z-index: 3;
+	z-index: 4;
 	cursor: pointer;
 }
 
@@ -101,7 +105,7 @@ body::-webkit-scrollbar-thumb {
 	position: sticky;
 	top: 79px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-	z-index: 0;
+	z-index: 2;
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -135,7 +139,7 @@ body::-webkit-scrollbar-thumb {
 	position: sticky;
 	top: 79px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-	z-index: 0;
+	z-index: 2;
 	background-color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -228,4 +232,315 @@ body::-webkit-scrollbar-thumb {
 	font-size: 14px;
 	line-height: 1.7;
 	cursor: default;
+}
+
+
+/*? ----------------------------COMMON---------------------------- */
+
+.btn {
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #fff;
+	background-color: #23408c;
+	border: 2px solid #23408c;
+	padding: 0.8rem 2.4rem;
+	border-radius: 40px;
+}
+
+.btn:hover {
+	transition: all .75s ease;
+	cursor: pointer;
+	background-color: #181c47;
+	border-color: #181c47;
+	color: #fff;
+}
+
+.outline {
+	background-color: #fff;
+	color: #23408c;
+}
+
+h1 {
+	font-family: PlayfairDisplay-Bold, serif;
+	color: #181c47;
+}
+
+
+/*? ----------------------------HOME---------------------------- */
+/** --------------INTRO-COMP-------------- */
+
+.intro-comp {
+	height: 768px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.intro-art-i {
+	background: url('https://animoto.com/static/YellowCorner-d367eaf0eeff2a90f1d4d374e3b1c3e8.svg') no-repeat;
+	background-size: contain;
+	position: absolute;
+	height: 10rem;
+	width: 15.5rem;
+	left: 0;
+	top: 0;
+}
+
+.intro-art-ii {
+	background: url('https://animoto.com/static/TealDots-212c4a91665ce0cc624cdf92514a34d6.svg') no-repeat;
+	background-size: contain;
+	position: absolute;
+	height: 9rem;
+	width: 7rem;
+	left: 0;
+	top: 3.5rem;
+}
+
+.intro-art-iii {
+	background: url('https://animoto.com/static/GreenSplats-15fc0323bde2b75a41736eea23e94dc7.svg') no-repeat;
+	background-size: contain;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 17rem;
+	width: 6rem;
+}
+
+.intro-content {
+	height: 600px;
+	background-color: #f4f3f9;
+	box-sizing: border-box;
+	padding: 90px 9%;
+	color: #181c47;
+}
+
+.intro-content>div:first-child {
+	height: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1rem;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+.intro-content>div:last-child {
+	height: 90%;
+	display: flex;
+	gap: 60px;
+	text-align: left;
+}
+
+.intro-content>div>div {
+	height: 100%;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.intro-content h1 {
+	font-size: 64px;
+}
+
+.intro-content h1+div {
+	font-size: 19px;
+	line-height: 1.5;
+	margin: 1.4rem 0 3rem 0;
+	letter-spacing: 1px;
+}
+
+.intro-content>div>div:last-child {
+	position: relative;
+}
+
+.intro-content>div>div:last-child>div {
+	width: 100%;
+	height: 74%;
+	position: absolute;
+}
+
+.intro-content>div>div:last-child>div:first-child {
+	bottom: 2rem;
+}
+
+.intro-content>div>div:last-child>div:first-child>img {
+	width: 100%;
+	height: 100%;
+}
+
+.intro-content>div>div:last-child>div:last-child {
+	top: 2rem;
+	right: 2rem;
+	cursor: pointer;
+}
+
+.intro-content>div>div:last-child>div:last-child>video {
+	width: 100%;
+	height: 100%;
+}
+
+/** --------------BUSINESS-COMP-------------- */
+
+.business-comp {
+	height: 768px;
+	box-sizing: border-box;
+	padding: 40px 100px;
+	cursor: default;
+}
+
+.business-header>h1,
+.qt-header>h1,
+.need-header>h1,
+.need-content>div>div>h1 {
+	font-size: 43px;
+	margin-bottom: 1rem;
+}
+
+.business-content {
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5rem;
+	line-height: 1.7;
+	font-size: 18px;
+	color: #181c47;
+	letter-spacing: 0.1em;
+	box-sizing: border-box;
+}
+
+.business-content>div {
+	width: 32%;
+}
+
+.business-content img {
+	width: 100%;
+	cursor: pointer;
+}
+
+.business-content h4 {
+	color: #23408c;
+	font-size: 17px;
+	margin: 2rem auto 1rem auto;
+}
+
+.business-content h4+div {
+	margin: 0 auto 2rem auto;
+}
+
+/** --------------QUICKLY-TEMPLATES-COMP-------------- */
+
+.qt-comp {
+	height: 768px;
+	width: 95%;
+	margin: auto;
+	box-sizing: border-box;
+	padding: 60px;
+	background-color: #f4f3f9;
+	color: #181c47;
+	cursor: default;
+	margin-bottom: 3rem;
+	position: relative;
+}
+
+.qt-header>h4 {
+	letter-spacing: 0.1em;
+	margin-bottom: 1rem;
+}
+
+.qt-navigator {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 2.4rem;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	color: #23408c;
+	cursor: pointer;
+	border-color: #23408c;
+}
+
+.qt-navigator>div {
+	padding-bottom: 4px;
+}
+
+.qt-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	letter-spacing: 0.1em;
+}
+
+.qt-content>div {
+	width: 31.4%;
+	text-align: left;
+	position: relative;
+}
+
+.qt-content h4 {
+	margin: 1.5rem 0 2rem 0;
+}
+
+.qt-content img {
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.qt-play-btn {
+	position: absolute;
+	left: 7px;
+	top: 7px;
+	color: whitesmoke;
+	font-size: 55px;
+	background-color: rgba(0, 0, 0, 0.477);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.qt-play-btn:hover {
+	background-color: rgba(0, 0, 0, 0.603);
+}
+
+.qt-content video {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+/** --------------EVERYTHING-NEED-COMP-------------- */
+
+.need-comp {
+	color: #181c47;
+	cursor: default;
+	padding: 5rem;
+}
+
+.need-content {
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.need-content>div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 7rem;
+	margin: 5rem;
+	margin-bottom: 7rem;
+}
+
+.need-details {
+	width: 70%;
+}
+
+.need-details>div {
+	font-size: 19px;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+}
+
+.need-content video {
+	width: 100%;
 }
