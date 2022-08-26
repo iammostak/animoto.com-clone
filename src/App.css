@@ -261,6 +261,18 @@ body::-webkit-scrollbar-thumb {
 	color: #23408c;
 }
 
+.white {
+	color: #23408c;
+	border-color: #fff;
+	background-color: #fff;
+}
+
+.white:hover {
+	color: #23408c;
+	border-color: lightgray;
+	background-color: lightgray;
+}
+
 h1 {
 	font-family: PlayfairDisplay-Bold, serif;
 	color: #181c47;
@@ -390,7 +402,8 @@ h1 {
 .business-header>h1,
 .qt-header>h1,
 .need-header>h1,
-.need-content>div>div>h1 {
+.need-content>div>div>h1,
+.review-header>h1 {
 	font-size: 43px;
 	margin-bottom: 1rem;
 }
@@ -514,6 +527,8 @@ h1 {
 	color: #181c47;
 	cursor: default;
 	padding: 5rem;
+	padding-bottom: 0;
+	position: relative;
 }
 
 .need-content {
@@ -543,4 +558,274 @@ h1 {
 
 .need-content video {
 	width: 100%;
+}
+
+.need-art-i {
+	background: url('https://animoto.com/static/BlueBlob-f3612ef9bf45c9875bb88442cf5907aa.svg') no-repeat;
+	background-size: contain;
+	position: absolute;
+	width: 5rem;
+	height: 17rem;
+	left: -5rem;
+	bottom: -18rem;
+}
+
+.need-art-ii {
+	background: url('https://animoto.com/static/TealSplash-367ca720269f605ab1e13d82d6726e16.svg') no-repeat;
+	background-size: contain;
+	position: absolute;
+	width: 5rem;
+	height: 17rem;
+	right: -6.07rem;
+	bottom: 9rem;
+}
+
+/** --------------CUSTOMERS-REVIEW-COMP-------------- */
+
+.review-comp {
+	height: auto;
+	box-sizing: border-box;
+	padding: 2rem 5rem;
+	color: #181c47;
+	cursor: default;
+}
+
+.review-content {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	margin-top: 3rem;
+	line-height: 1.7;
+	letter-spacing: 0.1em;
+	font-size: 17px;
+}
+
+.review-content>div {
+	width: 31%;
+}
+
+.review-content h4 {
+	line-height: 3;
+}
+
+.review-content img {
+	height: 120px;
+}
+
+/** --------------PARTNER-OF-COMP-------------- */
+
+.partner-comp {
+	padding: 5rem 7rem;
+	color: #181c47;
+}
+
+.partner-comp>h4 {
+	margin-bottom: 2rem;
+	letter-spacing: 0.1em;
+}
+
+.partner-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.partner-content>div {
+	width: 20%;
+	height: 5rem;
+}
+
+.partner-content img {
+	height: 100%;
+	width: auto;
+	cursor: pointer;
+}
+
+/** --------------FIRST-VIDEO-COMP-------------- */
+
+.first-video-comp {
+	padding: 2rem 0;
+	color: #fff;
+	cursor: default;
+}
+
+.first-video-curve-i {
+	background: url('https://animoto.com/static/wave-aeda5c1f5857751c695e656303e25aa5.svg') no-repeat;
+	background-position-x: 43%;
+	background-position-y: bottom;
+	background-size: 4000px 70px;
+	transform: scaleY(-1) translateY(-1px);
+	height: 70px;
+	width: 100%;
+}
+
+.first-video-curve-ii {
+	background: url('https://animoto.com/static/wave-aeda5c1f5857751c695e656303e25aa5.svg') no-repeat;
+	background-position-x: 55%;
+	background-size: 6000px 70px;
+	transform: translateY(-1px);
+	height: 70px;
+	width: 100%;
+}
+
+.first-video-content {
+	background-color: #23408c;
+	line-height: 2;
+	position: relative;
+}
+
+.first-video-content>h1 {
+	color: #fff;
+	font-size: 67px;
+}
+
+.first-video-content>div {
+	padding: 1.7rem 0;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+}
+
+.first-video-content p {
+	margin-bottom: 2rem;
+}
+
+.first-video-content button+div {
+	margin-top: 2rem;
+}
+
+.see-pricing {
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 2px solid white;
+	cursor: pointer;
+	letter-spacing: 0.1em;
+	padding-bottom: 0.2rem;
+}
+
+.see-pricing:hover {
+	color: whitesmoke;
+	border-color: whitesmoke;
+	transition: all 0.75s ease;
+}
+
+.first-video-art-i {
+	background: url('https://animoto.com/static/LeftNavySwirl-0d3cf8289676e3ba3c657cf7ea051f88.svg') no-repeat;
+	position: absolute;
+	background-size: contain;
+	height: 20rem;
+	width: 8rem;
+	left: 0;
+	top: 0;
+}
+
+.first-video-art-ii {
+	background: url('https://animoto.com/static/RightNavySwirl-f066eaa1f245033bb78138cb51d8c1b6.svg') no-repeat;
+	position: absolute;
+	background-size: contain;
+	height: 20rem;
+	width: 13rem;
+	right: 0;
+	top: 0;
+}
+
+/** --------------HELP-CENTER-COMP-------------- */
+
+.help-comp {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	padding: 5rem 0;
+	padding-left: 5rem;
+	cursor: default;
+	color: #181c47;
+}
+
+.help-content {
+	width: 70%;
+	text-align: left;
+}
+
+.help-content>h1 {
+	font-size: 43px;
+	line-height: 1.7;
+}
+
+.help-content>div {
+	margin: 2rem 0;
+	line-height: 2;
+	font-size: 18px;
+	letter-spacing: 0.06em;
+}
+
+.help-comp span {
+	color: #4664c8;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.help-comp span:hover {
+	color: #181c47;
+}
+
+.help-content+div {
+	display: flex;
+	align-items: center;
+}
+
+.help-content+div>img {
+	width: 100%;
+}
+
+/** --------------EXPLORE-COMP-------------- */
+
+.explore-comp {
+	padding: 2rem 4rem;
+	background-color: #f4f3f9;
+	color: #181c47;
+}
+
+.explore-header {
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	cursor: pointer;
+}
+
+.explore-content {
+	display: flex;
+	text-align: left;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+
+.explore-content>div {
+	width: 20%;
+	box-sizing: border-box;
+	padding-left: 3rem;
+	line-height: 2.4;
+	letter-spacing: 0.07em;
+}
+
+.explore-content h4 {
+	color: #241d49;
+	font-size: 17px;
+	cursor: default;
+	letter-spacing: 0.1em;
+}
+
+.explore-content p {
+	font-size: 18px;
+	color: #4664c8;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.explore-content p:hover {
+	color: #23408c;
 }

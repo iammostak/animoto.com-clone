@@ -27,6 +27,14 @@ function EverythingNeed() {
                video='https://d2of6bhnpl91ni.cloudfront.net/cms/create-unlimited-videos-37b27ee358.mp4'
                buttonText='GET STARTED FREE'
             />
+            <EverythingNeedRightCard
+               title='Take the stress out of video feedback'
+               des='No more juggling messy email threads and contradictory comments. Invite anyone to add time-stamped comments to your video. Reply and implement feedback right from your video editing workspace.'
+               video='https://d2of6bhnpl91ni.cloudfront.net/cms/2022-06_CommentingLP-Graphic1-8bad680eab.mp4'
+               buttonText='LEARN MORE'
+            />
+            <div className='need-art-i'></div>
+            <div className='need-art-ii'></div>
          </div>
       </div>
    );
