@@ -19,6 +19,7 @@ function Navbar() {
 
    const handleLogout = () => {
       setUserEmail('');
+      setShowMenu(false);
       setIsLogin(false);
    }
 
