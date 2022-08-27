@@ -9,6 +9,10 @@ import PartnerOf from "../Components/PartnerOf";
 import QuicklyTemplates from "../Components/QuicklyTemplates";
 
 function Home() {
+
+   document.title = 'Free Video Maker | Create &amp; Edit Your Videos Easily - Animoto';
+
+
    return (
       <div>
          <Introduction />
