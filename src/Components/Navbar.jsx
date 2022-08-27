@@ -1,13 +1,26 @@
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from 'react-icons/io';
+import { AiOutlineLogout, AiOutlineSetting } from 'react-icons/ai';
+import { MdFavoriteBorder, MdOutlineStore } from 'react-icons/md';
+import { CgMenuRound, CgProfile } from 'react-icons/cg';
+import { RiProjector2Line, RiMovie2Line } from 'react-icons/ri';
 import Create from "./Create";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Learn from "./Learn";
+import { AppContext } from "../Context/AppContext";
 
 function Navbar() {
 
    const [dropdown_i, setDropdown_i] = useState(false);
    const [dropdown_ii, setDropdown_ii] = useState(false);
+   const { isLogin, setIsLogin, userEmail, setUserEmail } = useContext(AppContext);
+   const [showMenu, setShowMenu] = useState(false);
+
+
+   const handleLogout = () => {
+      setUserEmail('');
+      setIsLogin(false);
+   }
 
 
    return (
@@ -37,8 +50,46 @@ function Navbar() {
                </div>
             </div>
             <div>
-               <NavLink className="nav-link" to='/login'>LOG IN</NavLink>
-               <NavLink className="nav-link" to='/signup'>SIGN UP FREE</NavLink>
+               {isLogin ?
+                  <>
+                     <CgProfile className='nav-user' />
+                     <RiProjector2Line className='nav-user' />
+                     <CgMenuRound className="nav-menu" onClick={() => setShowMenu(!showMenu)} />
+                  </>
+                  : <>
+                     <NavLink className="nav-link" to='/login'>LOG IN</NavLink>
+                     <NavLink className="nav-link" to='/signup'>SIGN UP FREE</NavLink>
+                  </>
+               }
+               {
+                  isLogin && showMenu &&
+                  <div className="nav-menu-drawer">
+                     <div>
+                        <CgProfile className='drawer-icon' />
+                        {userEmail}
+                     </div>
+                     <div>
+                        <RiMovie2Line className='drawer-icon' />
+                        On going project
+                     </div>
+                     <div>
+                        <MdFavoriteBorder className='drawer-icon' />
+                        Favorite templates
+                     </div>
+                     <div>
+                        <MdOutlineStore className='drawer-icon' />
+                        Store
+                     </div>
+                     <div>
+                        <AiOutlineSetting className='drawer-icon' />
+                        App Settings
+                     </div>
+                     <div onClick={handleLogout}>
+                        <AiOutlineLogout className='drawer-icon' />
+                        Log out
+                     </div>
+                  </div>
+               }
             </div>
          </nav>
          {

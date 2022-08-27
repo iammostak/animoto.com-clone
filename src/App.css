@@ -90,8 +90,56 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar>div:last-child {
-	margin-left: 10%;
 	justify-content: right;
+	position: relative;
+}
+
+.nav-user {
+	font-size: 33px;
+	cursor: pointer;
+}
+
+.nav-menu {
+	font-size: 37px;
+	cursor: pointer;
+}
+
+.nav-menu-drawer {
+	height: 97vh;
+	width: 30vw;
+	position: absolute;
+	background: #fff;
+	top: 79px;
+	right: -55px;
+	z-index: 2;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+	background-image: url('https://animoto.com/static/GreenSplats-15fc0323bde2b75a41736eea23e94dc7.svg');
+	background-size: 5rem;
+	background-repeat: no-repeat;
+	background-position: right 50vh;
+	box-sizing: border-box;
+}
+
+.nav-menu-drawer>div {
+	height: 3rem;
+	width: 90%;
+	margin: 1rem auto;
+	border-radius: 0.5rem;
+	background-color: #f4f3f9;
+	display: flex;
+	align-items: center;
+	gap: 0.7rem;
+	box-sizing: border-box;
+	padding: 0.2rem 1rem;
+	letter-spacing: 0.1em;
+}
+
+.nav-menu-drawer>div:hover {
+	background-color: #f3f0fd;
+}
+
+.drawer-icon {
+	font-size: 24px;
 }
 
 
@@ -271,6 +319,31 @@ body::-webkit-scrollbar-thumb {
 	color: #23408c;
 	border-color: lightgray;
 	background-color: lightgray;
+}
+
+.gray {
+	color: #505050;
+	border-color: darkgray;
+	background-color: #fff;
+}
+
+.gray:hover {
+	color: #505050;
+	border-color: gray;
+	background-color: #fff;
+}
+
+.disabled {
+	color: whitesmoke;
+	border-color: #91a0c7;
+	background-color: #91a0c7;
+}
+
+.disabled:hover {
+	color: whitesmoke;
+	border-color: #91a0c7;
+	background-color: #91a0c7;
+	cursor: not-allowed;
 }
 
 h1 {
@@ -828,4 +901,191 @@ h1 {
 
 .explore-content p:hover {
 	color: #23408c;
+}
+
+
+/*? ----------------------------SIGN-UP-AND-LOG-IN---------------------------- */
+
+.signup,
+.login {
+	min-height: 100vh;
+	position: relative;
+	color: #181c47;
+}
+
+.signup-art-i,
+.login-art-i {
+	background: url('https://d2of6bhnpl91ni.cloudfront.net/bundles/react/images/YellowSplats2.svg') no-repeat;
+	background-size: contain;
+	position: absolute;
+	height: 20rem;
+	width: 7rem;
+	left: 0;
+	top: 1rem;
+}
+
+.signup-art-ii,
+.login-art-ii {
+	background: url('https://d2of6bhnpl91ni.cloudfront.net/bundles/react/images/BlueSplash.svg') no-repeat;
+	background-size: contain;
+	position: absolute;
+	transform: scaleX(-1) !important;
+	right: 0;
+	top: 14rem;
+	height: 20rem;
+	width: 5rem;
+}
+
+.signup-header,
+.login-header {
+	padding: 1.7rem 0;
+	line-height: 1.7;
+	cursor: default;
+}
+
+.signup-header>h1,
+.login-header>h1 {
+	font-size: 36px;
+}
+
+.signup-header>div,
+.login-header>div {
+	font-size: 20px;
+	letter-spacing: 0.1em;
+}
+
+.signup-body,
+.login-body {
+	width: 33%;
+	margin: 0.5rem auto;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 2rem;
+	position: relative;
+}
+
+.signup-body>input,
+.login-body>input {
+	height: 2.7rem;
+	box-sizing: border-box;
+	font-size: 18px;
+	letter-spacing: 0.05em;
+	border: 1px solid gray;
+	outline-color: #23408c;
+	padding: 0 0.5rem;
+	border-radius: 0.3rem;
+}
+
+.signup-body>input:hover,
+.login-body>input:hover {
+	border: 2px solid #23408c;
+}
+
+.password-icon {
+	position: absolute;
+	font-size: 24px;
+	color: gray;
+	right: 1rem;
+	bottom: 5.6rem;
+	cursor: pointer;
+}
+
+.password-icon-invalid {
+	position: absolute;
+	font-size: 24px;
+	color: gray;
+	right: 1rem;
+	bottom: 7.6rem;
+	cursor: pointer;
+}
+
+.password-icon:hover {
+	color: #23408c;
+}
+
+.signup-footer,
+.login-footer {
+	width: 33%;
+	margin: 2.4rem auto;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 1.7rem;
+	cursor: default;
+}
+
+.signup-footer>div:first-child,
+.login-footer>div:first-child {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: gray;
+	gap: 0.5rem;
+}
+
+.signup-footer>div:first-child>div,
+.login-footer>div:first-child>div {
+	height: 100%;
+}
+
+.signup-footer>div:first-child>div:first-child,
+.signup-footer>div:first-child>div:last-child,
+.login-footer>div:first-child>div:first-child,
+.login-footer>div:first-child>div:last-child {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid lightgray;
+}
+
+.signup-footer>button {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.signup-footer>button+div,
+.login-footer>div:nth-child(3) {
+	font-size: 12px;
+	color: gray;
+	letter-spacing: 0.085em;
+}
+
+.signup-footer span,
+.login-footer span {
+	color: darkgray;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.signup-footer>div:last-child,
+.login-footer>div:last-child {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	letter-spacing: 0.1em;
+	margin-top: -1rem;
+	color: #181c47;
+}
+
+.login-footer>div:nth-child(2) {
+	width: 400%;
+	margin: auto;
+	margin-left: -150%;
+}
+
+.login-footer>div:nth-child(2)>button:nth-child(2) {
+	margin: 0 1rem;
+}
+
+.email-status {
+	display: flex;
+	align-items: center;
+	gap: 0.2rem;
+	color: red;
+	margin-top: -2rem;
+	font-size: 14px;
+	letter-spacing: 0.07em;
 }
