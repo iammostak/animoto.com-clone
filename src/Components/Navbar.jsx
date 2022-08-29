@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from 'react-icons/io';
-import { AiOutlineLogout, AiOutlineSetting } from 'react-icons/ai';
+import { FiHelpCircle } from 'react-icons/fi';
+import { AiOutlineExclamationCircle, AiOutlineLogout, AiOutlineSetting } from 'react-icons/ai';
 import { MdFavoriteBorder, MdOutlineStore } from 'react-icons/md';
 import { CgMenuRound, CgProfile } from 'react-icons/cg';
 import { RiProjector2Line, RiMovie2Line } from 'react-icons/ri';
@@ -84,6 +85,14 @@ function Navbar() {
                      <div>
                         <AiOutlineSetting className='drawer-icon' />
                         App Settings
+                     </div>
+                     <div>
+                        <AiOutlineExclamationCircle className='drawer-icon' />
+                        About Us
+                     </div>
+                     <div>
+                        <FiHelpCircle className='drawer-icon' />
+                        Help Center
                      </div>
                      <div onClick={handleLogout}>
                         <AiOutlineLogout className='drawer-icon' />
