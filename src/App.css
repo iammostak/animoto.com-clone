@@ -134,6 +134,10 @@ body::-webkit-scrollbar-thumb {
 	letter-spacing: 0.1em;
 }
 
+.nav-menu-drawer>div:last-child {
+	color: tomato;
+}
+
 .nav-menu-drawer>div:hover {
 	background-color: #f3f0fd;
 }
