@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from 'react-icons/io';
-import { FiHelpCircle } from 'react-icons/fi';
+import { BsSignpost } from 'react-icons/bs';
+import { FiHelpCircle, FiLogIn } from 'react-icons/fi';
 import { AiOutlineExclamationCircle, AiOutlineLogout, AiOutlineSetting } from 'react-icons/ai';
 import { MdFavoriteBorder, MdOutlineStore } from 'react-icons/md';
 import { CgMenuRound, CgProfile } from 'react-icons/cg';
@@ -16,6 +17,7 @@ function Navbar() {
    const [dropdown_ii, setDropdown_ii] = useState(false);
    const { isLogin, setIsLogin, userEmail, setUserEmail } = useContext(AppContext);
    const [showMenu, setShowMenu] = useState(false);
+   const [showLS, setShowLS] = useState(false);
 
 
    const handleLogout = () => {
@@ -59,9 +61,55 @@ function Navbar() {
                      <CgMenuRound className="nav-menu" onClick={() => setShowMenu(!showMenu)} />
                   </>
                   : <>
-                     <NavLink className="nav-link" to='/login'>LOG IN</NavLink>
-                     <NavLink className="nav-link" to='/signup'>SIGN UP FREE</NavLink>
+                     <NavLink className="nav-link nav-ls" to='/login'>LOG IN</NavLink>
+                     <NavLink className="nav-link nav-ls" to='/signup'>SIGN UP FREE</NavLink>
+                     <CgMenuRound className="nav-menu login-signup" onClick={() => setShowLS(!showLS)} />
                   </>
+               }
+               {
+                  showLS &&
+                  <div className="nav-menu-drawer">
+                     <NavLink className="nav-link" to='/login'>
+                        <div className="imp-sec" onClick={() => setShowLS(!showLS)}>
+                           <FiLogIn className="drawer-icon" />
+                           LOG IN
+                        </div>
+                     </NavLink>
+                     <NavLink className="nav-link" to='/signup'>
+                        <div className="imp-sec" onClick={() => setShowLS(!showLS)}>
+                           <BsSignpost className="drawer-icon" />
+                           SIGN UP FREE
+                        </div>
+                     </NavLink>
+                     <div>
+                        <CgProfile className='drawer-icon' />
+                        {userEmail !== '' ? userEmail : 'my Account'}
+                     </div>
+                     <div>
+                        <RiMovie2Line className='drawer-icon' />
+                        On going project
+                     </div>
+                     <div>
+                        <MdFavoriteBorder className='drawer-icon' />
+                        Favorite templates
+                     </div>
+                     <div>
+                        <MdOutlineStore className='drawer-icon' />
+                        Store
+                     </div>
+                     <div>
+                        <AiOutlineSetting className='drawer-icon' />
+                        App Settings
+                     </div>
+                     <div>
+                        <AiOutlineExclamationCircle className='drawer-icon' />
+                        About Us
+                     </div>
+                     <div>
+                        <FiHelpCircle className='drawer-icon' />
+                        Help Center
+                     </div>
+                  </div>
                }
                {
                   isLogin && showMenu &&
@@ -94,7 +142,7 @@ function Navbar() {
                         <FiHelpCircle className='drawer-icon' />
                         Help Center
                      </div>
-                     <div onClick={handleLogout}>
+                     <div className="imp-sec" onClick={handleLogout}>
                         <AiOutlineLogout className='drawer-icon' />
                         Log out
                      </div>
