@@ -75,7 +75,7 @@ function Login() {
             <input onChange={handleChange} style={!exists ? emailExistsStyle : undefined} type="email" name='email' placeholder="Email" autoFocus />
             {!exists &&
                <div className='email-status'>
-                  <RiErrorWarningLine />
+                  <RiErrorWarningLine className="invalid-icon" />
                   Invalid user email. Go to
                   <div>
                      <Link to='/signup' style={{ textDecoration: 'none', color: '#23408c' }}>Sign up →</Link>
@@ -89,7 +89,7 @@ function Login() {
             }
             {isWrongPassword &&
                <div className='email-status'>
-                  <RiErrorWarningLine />
+                  <RiErrorWarningLine className="invalid-icon" />
                   Wrong Password. Please check and try again.
                </div>
             }
@@ -128,7 +128,7 @@ function Login() {
             <div>
                By logging in you agree to our <span>terms of service</span> and <span>privacy policy</span>.
             </div>
-            <div>
+            <div className="ls-link">
                Already have an account?
                <Link to="/signup" style={{ textDecoration: 'none', color: '#23408c' }}>Sign up</Link>
             </div>

@@ -105,7 +105,7 @@ function Signup() {
             <div>
                By signing up you agree to our <span>terms of service</span> and <span>privacy policy</span>.
             </div>
-            <div>
+            <div className='ls-link'>
                Already have an account?
                <Link to="/login" style={{ textDecoration: 'none', color: '#23408c' }}>Log in</Link>
             </div>
