@@ -88,8 +88,8 @@ function Signup() {
             </button>
             {
                showToggle ?
-                  <BiHide className="password-icon" onClick={() => setShowToggle(!showToggle)} />
-                  : <BiShow className="password-icon" onClick={() => setShowToggle(!showToggle)} />
+                  <BiShow className="password-icon" onClick={() => setShowToggle(!showToggle)} />
+                  : <BiHide className="password-icon" onClick={() => setShowToggle(!showToggle)} />
             }
          </div>
          <div className="signup-footer">
