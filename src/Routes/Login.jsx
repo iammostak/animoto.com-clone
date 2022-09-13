@@ -101,8 +101,8 @@ function Login() {
             </button>
             {
                showToggle ?
-                  <BiHide className={isWrongPassword ? "password-icon-invalid" : "password-icon"} onClick={() => setShowToggle(!showToggle)} />
-                  : <BiShow className={isWrongPassword ? "password-icon-invalid" : "password-icon"} onClick={() => setShowToggle(!showToggle)} />
+                  <BiShow className={isWrongPassword ? "password-icon-invalid" : "password-icon"} onClick={() => setShowToggle(!showToggle)} />
+                  : <BiHide className={isWrongPassword ? "password-icon-invalid" : "password-icon"} onClick={() => setShowToggle(!showToggle)} />
             }
          </div>
          <div className="login-footer">
