@@ -1,17 +1,17 @@
-# **`Animoto.com Clone ›`**
+# **Animoto.com Clone**
 
 Animoto.com Clone.
 This is an individual project made for educational purpose only.  
 
 The project is a clone of [Animoto.com](https://www.animoto.com/) which is an online video editing application.
 
-> ## **`Welcome Here ›`**
+> ## **Welcome Here ›**
 
 Hello Readers,
 Site link: [https://clone-animoto.netlify.app/](https://clone-animoto.netlify.app/).
 I have finished this project in 4 days and have built frontend part of a very popular online video editing application, Animoto.com. Where users can Sign up, Login, and Surfing the interactive Home / Landing Page.
 
-> ## **`Features ›`**
+> ## **Features ›**
 
 - Navbar with complex functionalities (login and without login).
 - Dropdowns attached to the navigation bar.
@@ -21,7 +21,7 @@ I have finished this project in 4 days and have built frontend part of a very po
 - Beautifully designed footer with the Social media handles of original site.
 - Application is Responsive for Tablet as well.
 
-> ## **`Tech Stacks Used ›`**
+> ## **Tech Stacks Used ›**
 
 - **React**
 - **CSS**
@@ -33,7 +33,7 @@ I have finished this project in 4 days and have built frontend part of a very po
    <img src="https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/router.png" height="70px">
 </p>
 
-> ## **`Glimpses of our project ›`**
+> ## **Glimpses of our project ›**
 
 ### **01. Navbar without login ›**
 
@@ -68,7 +68,7 @@ I have finished this project in 4 days and have built frontend part of a very po
 
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/footer.png)
 
-## **`Thanks for reading`**
+## **Thanks for reading**
 
 I looking forward to adding some more features and functionalities, which are left in this project, for future expansion.
 
@@ -76,4 +76,4 @@ In case of any suggestion and query feel free to connect me.
 
 Regards,
 
-***`Md Mostafijur Rahman`***
+***Md Mostafijur Rahman***
