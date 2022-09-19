@@ -84,6 +84,8 @@ I have finished this project in 4 days and have built frontend part of a very po
 
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/footer.png)
 
+---
+
 > ## **Thanks for reading**
 
 I looking forward to adding some more features and functionalities, which are left in this project, for future expansion.
