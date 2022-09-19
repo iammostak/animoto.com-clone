@@ -37,34 +37,50 @@ I have finished this project in 4 days and have built frontend part of a very po
 
 ### **01. Navbar without login ›**
 
+---
+
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/navbar-out.png)
 
 ### **02. Navbar with login ›**
 
+---
+
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/navbar-in.png)
 
 ### **03. Home Page / Landing Page ›**
+
+---
 
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/homepage.png)
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/homepage-ii.png)
 
 ### **04. Sign up Page with registered email ›**
 
+---
+
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/signup-i.png)
 
 ### **05. Sign up Page with unregistered email ›**
+
+---
 
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/signup-ii.png)
 
 ### **06. Login Page with unregistered email ›**
 
+---
+
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/login-i.png)
 
 ### **07. Login Page with registered email ›**
 
+---
+
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/login-ii.png)
 
 ### **08. Footer ›**
+
+---
 
 ![image](https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/footer.png)
 
