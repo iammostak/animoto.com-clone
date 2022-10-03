@@ -22,7 +22,7 @@ function Signup() {
 
 
    const getUserCredential = () => {
-      axios.get(`https://json-server-mock-api-all.herokuapp.com/userCredentials`)
+      axios.get(`https://fake-restful-api-production.up.railway.app/userCredentials`)
          .then(res => setUserCredential(res.data))
          .catch(err => console.log(err));
    }
@@ -35,7 +35,7 @@ function Signup() {
 
 
    const handleSubmit = () => {
-      axios.post(`https://json-server-mock-api-all.herokuapp.com/userCredentials`, {
+      axios.post(`https://fake-restful-api-production.up.railway.app/userCredentials`, {
          ...user,
          id: user.password + Date.now(),
       })
