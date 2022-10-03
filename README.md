@@ -23,14 +23,18 @@ I have finished this project in 4 days and have built frontend part of a very po
 
 > ## **Tech Stacks Used ›**
 
-- **React**
+- **HTML**
 - **CSS**
+- **React**
+- **Advance JS**
 - **React Router**
 
 <p>
-   <img src="https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/css.png" height="70px">
-   <img src="https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/react.png" height="70px">
-   <img src="https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/router.png" height="70px">
+   <img src="https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/html.png" height="70px" style='margin:7px'>
+   <img src="https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/css.png" height="70px" style='margin:7px'>
+   <img src="https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/react.png" height="70px" style='margin:7px'>
+   <img src="https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/js.png" height="70px" style='margin:7px'>
+   <img src="https://raw.githubusercontent.com/iammostak/innate-earth-4569/main/src/assets/router.png" height="70px" style='margin:7px'>
 </p>
 
 > ## **Glimpses of our project ›**

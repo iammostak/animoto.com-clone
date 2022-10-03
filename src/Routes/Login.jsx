@@ -26,7 +26,7 @@ function Login() {
 
 
    const getUserCredential = () => {
-      axios.get(`https://json-server-mock-api-all.herokuapp.com/userCredentials`)
+      axios.get(`https://fake-restful-api-production.up.railway.app/userCredentials`)
          .then(res => setUserCredential(res.data))
          .catch(err => console.log(err));
    }
