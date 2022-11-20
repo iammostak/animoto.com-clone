@@ -23,7 +23,7 @@ function Login() {
 
    const getUserCredential = () => {
       axios
-         .get(`https://fake-restful-api.onrender.com/userCredentials`)
+         .get(`${import.meta.env.VITE_URL}/userCredentials`)
          .then((res) => setUserCredential(res.data))
          .catch((err) => console.log(err));
    };
