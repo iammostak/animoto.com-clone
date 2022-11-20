@@ -19,7 +19,7 @@ function Signup() {
 
    const getUserCredential = () => {
       axios
-         .get(`https://fake-restful-api.onrender.com/userCredentials`)
+         .get(`${import.meta.env.VITE_URL}/userCredentials`)
          .then((res) => setUserCredential(res.data))
          .catch((err) => console.log(err));
    };
@@ -31,7 +31,7 @@ function Signup() {
 
    const handleSubmit = () => {
       axios
-         .post(`https://fake-restful-api.onrender.com/userCredentials`, {
+         .post(`${import.meta.env.VITE_URL}/userCredentials`, {
             ...user,
             id: user.password + Date.now(),
          })
